@@ -48,20 +48,41 @@
                                 @enderror
                             </div>
 
-                            <!-- Current File -->
+                            <!-- Current File or URL -->
                             <div class="mb-3">
-                                <label class="form-label">File Saat Ini</label><br>
+                                <label class="form-label">File/URL Saat Ini</label><br>
+                                @if ($case->type === 'url')
+                                <a href="{{ $case->url }}" target="_blank">
+                                    {{ $case->title }} (Link Eksternal)
+                                </a>
+                                @else
                                 <a href="{{ asset($case->file_path) }}" target="_blank">
                                     {{ $case->title }} ({{ strtoupper($case->type) }})
                                 </a>
+                                @endif
                             </div>
 
-                            <!-- New File Upload -->
+                            <!-- New File Upload or URL Input -->
                             <div class="mb-3">
-                                <label class="form-label">Ganti File (Opsional)</label>
-                                <input type="file" name="file" class="form-control @error('file') is-invalid @enderror">
+                                <label class="form-label">Ganti dengan File atau URL</label>
+                                <div class="row g-2">
+                                    <div class="col-md-6">
+                                        <input type="file" name="file" id="editFileInput"
+                                            class="form-control @error('file') is-invalid @enderror @error('url') is-invalid @enderror">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="url" name="url" id="editUrlInput"
+                                            class="form-control @error('file') is-invalid @enderror @error('url') is-invalid @enderror"
+                                            placeholder="https://example.com/file.pdf " value="{{ old('url') }}">
+                                    </div>
+                                </div>
+                                <small class="text-muted d-block mt-1">Pilih salah satu: upload file atau masukkan URL
+                                    eksternal.</small>
                                 @error('file')
-                                <div class="invalid-feedback">{{ $message }}</div>
+                                <div class="invalid-feedback d-block">{{ $message }}</div>
+                                @enderror
+                                @error('url')
+                                <div class="invalid-feedback d-block">{{ $message }}</div>
                                 @enderror
                             </div>
 
@@ -80,4 +101,30 @@
         </form>
     </div>
 </div>
+@endsection
+@section('scripts')
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const fileInput = document.getElementById('editFileInput');
+        const urlInput = document.getElementById('editUrlInput');
+
+        if (fileInput && urlInput) {
+            fileInput.addEventListener('change', function () {
+                if (fileInput.files.length > 0) {
+                    urlInput.disabled = true;
+                } else {
+                    urlInput.disabled = false;
+                }
+            });
+
+            urlInput.addEventListener('input', function () {
+                if (urlInput.value.trim() !== '') {
+                    fileInput.disabled = true;
+                } else {
+                    fileInput.disabled = false;
+                }
+            });
+        }
+    });
+</script>
 @endsection

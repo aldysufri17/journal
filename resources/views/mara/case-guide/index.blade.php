@@ -20,32 +20,43 @@
         <div class="row row-cards">
 
             @forelse ($cases as $case)
-                <div class="col-md-3 col-sm-6">
-                    <div class="card card-file shadow-sm border rounded">
-                        <div class="card-body text-center p-3">
-                            <div class="card-file__icon">
-                                {!! getModulIcon($case->type) !!}
-                            </div>
-                            <div class="card-file__name mt-2">
-                                <strong>{{ $case->title }}</strong><br>
-                                <small>{{ strtoupper($case->type) }}</small>
-                            </div>
-                            <div class="card-file__actions mt-2">
-                                <a href="{{ asset($case->file_path) }}" target="_blank" class="btn btn-sm btn-primary w-100 mb-1">Lihat</a>
-                                <a href="{{ route('case-guide.edit', $case->id) }}" class="btn btn-sm btn-warning w-100 mb-1">Edit</a>
-                                <form action="{{ route('case-guide.destroy', $case->id) }}" method="POST" class="d-inline">
-                                    @csrf
-                                    @method('DELETE')
-                                    <button type="submit" class="btn btn-sm btn-danger w-100" onclick="return confirm('Hapus case ini?')">Hapus</button>
-                                </form>
-                            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card card-file shadow-sm border rounded">
+                    <div class="card-body text-center p-3">
+                        <div class="card-file__icon">
+                            {!! getModulIcon($case->type) !!}
+                        </div>
+                        <div class="card-file__name mt-2">
+                            <strong>{{ $case->title }}</strong><br>
+                            <small>{{ strtoupper($case->type) }}</small>
+                        </div>
+                        <div class="card-file__actions mt-2">
+
+                            @if ($case->type === 'url')
+                            <a href="{{ $case->url }}" target="_blank" class="btn btn-sm btn-primary w-100 mb-1">Buka
+                                URL</a>
+                            @else
+                            <a href="{{ asset($case->file_path) }}" target="_blank"
+                                class="btn btn-sm btn-primary w-100 mb-1">Lihat File</a>
+                            @endif
+
+                            <a href="{{ route('case-guide.edit', $case->id) }}"
+                                class="btn btn-sm btn-warning w-100 mb-1">Edit</a>
+
+                            <form action="{{ route('case-guide.destroy', $case->id) }}" method="POST" class="d-inline">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-sm btn-danger w-100"
+                                    onclick="return confirm('Hapus panduan ini?')">Hapus</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </div>
             @empty
-                <div class="col-12 text-center">
-                    <p>Tidak ada Panduan kasus ditemukan.</p>
-                </div>
+            <div class="col-12 text-center">
+                <p>Tidak ada Panduan kasus ditemukan.</p>
+            </div>
             @endforelse
 
         </div>
@@ -55,14 +66,15 @@
 
 @section('styles')
 <style>
-.card-file__icon svg {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-.card-file:hover {
-    background-color: #f8f9fc;
-    border-color: #0b77e7;
-}
+    .card-file__icon svg {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .card-file:hover {
+        background-color: #f8f9fc;
+        border-color: #0b77e7;
+    }
 </style>
 @endsection

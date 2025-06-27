@@ -16,8 +16,7 @@ class CreateRegulationsTable extends Migration
         Schema::create('regulations', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('file_path'); // path file di storage/public
-            $table->string('type'); // pdf, ppt, docx, xlsx, dll
+            $table->string('file_path')->nullable(); // path file di public/doc/
             $table->text('description')->nullable();
             $table->timestamps();
         });

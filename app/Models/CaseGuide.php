@@ -13,6 +13,7 @@ class CaseGuide extends Model
         'title',
         'description',
         'file_path',
-        'type'
+        'type',
+        'url',
     ];
 }

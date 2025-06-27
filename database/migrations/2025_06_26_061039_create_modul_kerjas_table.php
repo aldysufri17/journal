@@ -17,7 +17,7 @@ class CreateModulKerjasTable extends Migration
             $table->id();
             $table->string('title');
             $table->text('description')->nullable();
-            $table->string('file_path'); // path file di public/doc/
+            $table->string('file_path')->nullable(); // path file di public/doc/
             $table->string('type'); // pdf, docx, xls, dll
             $table->timestamps();
         });
