@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <header class="header" id="header"></header>
+    <div id="content" class="container-fluid">
+    </div>
+    <footer id="footer" class="footer"></footer>
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#header").load("pages/header.html");
+            $("#footer").load("pages/footer.html");
+            $("#content").load("pages/product.html", function () {
+                $('.carousel').carousel();
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    responsiveClass: true,
+                    center: true,
+                    nav: false,
+                    loop: true,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        700: {
+                            items: 3
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+</body>
+
+</html>

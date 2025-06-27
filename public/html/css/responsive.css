@@ -1,0 +1,1234 @@
+@media (max-width: 576px) {
+  /* new */
+  .banner-hero {
+    width: 100%;
+  }
+  .banner-hero-container {
+    padding-top: 0px;
+  }
+  .container_banner_partnership {
+    height: 360px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-partnership {
+    position: relative;
+  }
+  .img-partnership-content {
+    width: 100%;
+    /* height: 360px; */
+  }
+  /* end_new */
+  /* header */
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .nav-item {
+    list-style: none;
+  }
+
+  .nav-link {
+    color: #000;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .logo-icon {
+    width: 70px; /* Adjust size as needed */
+    height: auto;
+  }
+  .navbar-toggler-icon {
+    margin-left: 10px;
+  }
+  .nav-menu:hover .nav-link {
+    color: #fff;
+  }
+  ul.sub-menu {
+    top: 0px;
+    right: 168px;
+    box-shadow: none;
+  }
+  .nav-flag {
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item-flag {
+    display: flex;
+    align-items: center;
+  }
+  .border-item {
+    width: 150px;
+    padding-bottom: 0;
+    border: none;
+  }
+  .flag-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+  }
+  .menu-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    z-index: 1;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .nav-menu {
+    margin: 0px;
+    padding: 12px;
+  }
+  .nav-menu:hover {
+    background-color: #72a956;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  .navbar-collapse {
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transisi untuk max-height dan opacity */
+    max-height: 0; /* Sembunyikan navbarNav secara default */
+    opacity: 0; /* Sembunyikan navbarNav secara default */
+    overflow: hidden; /* Sembunyikan isi navbarNav yang melebihi batas max-height */
+  }
+  .navbar-collapse.show {
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transisi untuk max-height dan opacity */
+    max-height: 500px; /* Atur max-height ke nilai yang memadai untuk menampilkan semua isi navbarNav */
+    opacity: 1; /* Tampilkan navbarNav dengan opacity penuh */
+  }
+  #top-navbar ul.sub-menu {
+    min-width: 100%;
+    left: 0;
+  }
+  /* news */
+  .new-section .row {
+    padding: 0;
+  }
+  .latest-news h1 {
+    padding-left: 8px;
+  }
+  .latest-news h2 a {
+    margin-right: 0px;
+    padding-right: 8px;
+  }
+  .news-img {
+    width: 310px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news-item h3 {
+    margin: 30px 16px;
+  }
+  .news-item p {
+    margin: 0 16px;
+    margin-bottom: 40px;
+  }
+  /* item */
+  .item-container .row {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+  }
+
+  .item {
+    padding: 8px 16px;
+    margin: 20px 10px;
+    height: 350px;
+  }
+
+  .item p {
+    text-align: start;
+    font-size: 12px;
+    height: 150px;
+  }
+  .btn-show-more-detail {
+    margin-top: 10px;
+    font-size: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* form */
+  .form-kontak .row {
+    padding: 40px;
+    margin: 0;
+  }
+  .icon_main {
+    margin-bottom: 60px;
+    width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* footer */
+  .footer .container {
+    padding: 40px 20px;
+  }
+  .footer-qr-container {
+    padding-top: 30px;
+  }
+  .container-contact {
+    bottom: 0;
+  }
+  /* company */
+  .container-company {
+    /* height: 300px; */
+    font-size: 24px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+  }
+  .container-company span {
+    /* padding-bottom: 40px;
+    width: 100%; */
+    margin-top: -100px;
+  }
+  .visi-misi-company {
+    padding: 20px 40px;
+    font-size: 12px;
+  }
+
+  .visi-misi-company p {
+    line-height: 1.8;
+  }
+
+  .visi-misi-company h6 {
+    line-height: 2;
+    font-weight: bold;
+  }
+  .container_product {
+    padding-top: 18px;
+  }
+  .container_img_container img {
+    /* height: 200px; */
+  }
+  .container_product p {
+    padding: 0 20px;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  /* partnership */
+
+  .text-banner {
+    width: 80%;
+  }
+  .text-banner h1 {
+    font-size: 20px;
+  }
+  .text-banner h5 {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .form-kontak .row {
+    padding: 40px 20px;
+  }
+  .img_partnership {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  /* career */
+
+  .text-hatihati {
+    font-size: 15px;
+  }
+  .container_text_attention span {
+    text-align: center;
+    padding: 8px 50px;
+  }
+  .container_text_attention {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 10px;
+    padding: 0;
+    border: none;
+  }
+  .container_career .row {
+    margin: 0;
+  }
+  .container_career h1 {
+    font-size: 28px;
+  }
+  .career_text {
+    padding-left: 60px;
+    padding-right: 100px;
+    padding-top: 80px;
+  }
+  .career_text span {
+    font-size: 120px;
+    opacity: 0.3;
+  }
+  .petik {
+    top: 0;
+    left: 22px;
+  }
+  .und {
+    bottom: -20px;
+    right: 20px;
+  }
+  .img_career {
+    width: 100%;
+    object-fit: cover;
+  }
+  .career_desc {
+    padding: 40px 20px;
+  }
+  .career_desc h4 {
+    text-align: left;
+  }
+  .career_desc h4 {
+    font-size: 12px;
+    line-height: 2;
+  }
+  .career_filter_container {
+    padding: 20px;
+  }
+  .career_filter_container h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .career_filter_container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .container_attention {
+    padding: 40px 20px;
+    flex-direction: column;
+    background-color: #72a956;
+  }
+  .btn_filter {
+    color: #020e09;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .container_attention img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+  }
+
+  /* career_detail */
+  .career_detail {
+    padding: 20px 50px;
+    padding-top: 40px !important;
+  }
+  .career_detail_kiri {
+    margin-bottom: 30px;
+  }
+  .career_detail_kanan {
+    margin-bottom: 30px;
+  }
+  /* blog */
+  .blog {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .btn_search {
+    right: 26px;
+    height: 100%;
+  }
+  /* blog_detail */
+  .blog_detail {
+    padding: 20px;
+    margin-top: 80px;
+  }
+  .blog_detail_news {
+    text-align: center;
+  }
+  .blog_detail_news h1 {
+    text-align: left;
+  }
+  .blog_detail_news p {
+    text-align: left;
+  }
+  .blog_detail_img {
+    float: none;
+    width: 330px !important;
+    height: 600px !important;
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #72a956;
+  }
+  .indicators-home {
+    bottom: 6px;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 577px) and (max-width: 768px) {
+  /* new */
+  .banner-hero {
+    width: 100%;
+  }
+  .banner-hero-container {
+    padding-top: 20px;
+  }
+  .container_banner_partnership {
+    /* height: 460px; */
+    margin-top: 100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-partnership {
+    position: relative;
+  }
+  .img-partnership-content {
+    width: 100%;
+    /* height: 460px; */
+  }
+  /* end_new */
+
+  /* header */
+  .container {
+    max-width: 678px;
+    padding: 0 14px;
+  }
+  .menu-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .nav-item {
+    list-style: none;
+  }
+
+  .nav-link {
+    color: #000;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  .logo-icon {
+    width: 90px; /* Adjust size as needed */
+    height: auto;
+  }
+  .navbar-toggler-icon {
+    margin-left: 10px;
+  }
+  .nav-menu:hover .nav-link {
+    color: #fff;
+  }
+  ul.sub-menu {
+    top: 0px;
+    right: 168px;
+    box-shadow: none;
+  }
+  .nav-flag {
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item-flag {
+    display: flex;
+    align-items: center;
+    padding: 8px 22px;
+  }
+  .border-item {
+    width: 150px;
+    padding-bottom: 0;
+    border: none;
+  }
+  .flag-icon {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+  }
+
+  .menu-header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar-nav {
+    list-style: none;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    z-index: 1;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .nav-menu {
+    margin: 0px;
+    padding: 16px;
+  }
+  .nav-menu:hover {
+    background-color: #72a956;
+  }
+  .navbar-toggler {
+    background-color: #fff;
+    border-radius: 6px;
+  }
+  .navbar-collapse {
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transisi untuk max-height dan opacity */
+    max-height: 0; /* Sembunyikan navbarNav secara default */
+    opacity: 0; /* Sembunyikan navbarNav secara default */
+    overflow: hidden; /* Sembunyikan isi navbarNav yang melebihi batas max-height */
+  }
+  .navbar-collapse.show {
+    transition: max-height 0.3s ease, opacity 0.3s ease; /* Transisi untuk max-height dan opacity */
+    max-height: 500px; /* Atur max-height ke nilai yang memadai untuk menampilkan semua isi navbarNav */
+    opacity: 1; /* Tampilkan navbarNav dengan opacity penuh */
+  }
+  #top-navbar ul.sub-menu {
+    min-width: 100%;
+    left: 0;
+  }
+  /* item */
+  .item {
+    height: 380px;
+    padding: 10px 20px;
+  }
+  .btn-show-more-detail {
+    margin-top: 0;
+  }
+  .item-container .row {
+    padding: 0;
+    margin-top:10px;
+  }
+  .btn-show-more-detail {
+    bottom: 40px;
+    right: 18%;
+    padding: 8px 14px;
+  }
+
+  /* news */
+
+  .new-section .row {
+    padding: 0;
+  }
+  .news-img {
+    height: auto;
+    width: 474px;
+  }
+  .latest-news h2 a {
+    padding-right: 20px;
+  }
+  .new-section .container {
+    max-width: 967px;
+    padding: 0 20px;
+  }
+
+  /* form */
+  .form-kontak .row {
+    padding: 60px 60px;
+  }
+  .icon_main {
+    margin-bottom: 60px;
+    height: auto;
+    width: 424px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* footer */
+  .footer-qr-container {
+    padding-top: 40px;
+  }
+  .footer .container {
+    padding: 40px 10px;
+  }
+  /* company */
+  .container-company {
+    font-size: 28px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+  .container-company span {
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .visi-misi-company {
+    padding: 20px 40px;
+    font-size: 12px;
+  }
+
+  .visi-misi-company p {
+    line-height: 1.8;
+  }
+
+  .visi-misi-company h6 {
+    line-height: 2;
+    font-weight: bold;
+  }
+  .slider {
+    height: 400px;
+  }
+  .container_product {
+    padding-top: 24px;
+  }
+  .container_img_container img {
+    /* height: 300px; */
+  }
+  .container_product p {
+    padding: 0 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  /* .owl-carousel */
+  .owl-carousel-img {
+    flex-direction: column;
+    height: 320px;
+  }
+  .slider-card {
+    background-color: #e1eddc;
+    opacity: 0.3;
+  }
+  .owl-box {
+    font-size: 20px;
+    width: 240px;
+    height: 180px;
+    margin-top: -140px;
+  }
+  .owl-carousel-img img {
+    height: 160px;
+  }
+  .owl-item.active.center .owl-carousel-img img {
+    transition: all 0.3s;
+    transform: scale(1.5);
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  .owl-item.active.center .owl-box {
+    transition: all 0.3s;
+    font-size: 24px;
+    border-radius: 20px;
+    margin-top: -120px;
+    padding: 10px;
+  }
+  /* partnership */
+  .text-banner {
+    width: 560px;
+    margin-top: 20px;
+  }
+  .text-banner h1 {
+    font-size: 31px;
+  }
+  .form-kontak .row {
+    padding: 40px 50px;
+    margin-top: 20px;
+  }
+  .img_partnership {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  /* career */
+  .container_img_career {
+    padding: 0 20px;
+  }
+  .container_career {
+    padding-top: 0px;
+  }
+  .text-hatihati {
+    font-size: 16px;
+  }
+  .container_text_attention {
+    font-size: 10px;
+  }
+  .container_text_attention {
+    padding: 10px 10px 5px 10px;
+  }
+  .container_career h1 {
+    font-size: 28px;
+  }
+  .career_text {
+    padding-left: 60px;
+    padding-right: 100px;
+  }
+  .career_text span {
+    font-size: 120px;
+    opacity: 0.3;
+  }
+  .petik {
+    top: 0;
+    left: 0;
+  }
+  .und {
+    bottom: 0;
+    right: 20px;
+  }
+  .img_career {
+    width: 100%;
+    object-fit: contain;
+  }
+  .career_desc {
+    padding: 20px 80px;
+  }
+  .career_desc h4 {
+    font-size: 12px;
+    line-height: 2;
+  }
+  .career_filter_container h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .career_filter_container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .container_attention {
+    padding: 60px 40px;
+  }
+  .btn_filter {
+    color: #020e09;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .container_attention img {
+    width: 100%;
+  }
+  /* career_detail */
+  .career_detail {
+    padding: 20px 90px;
+    padding-top: 40px !important;
+  }
+  .career_detail_kiri {
+    margin-bottom: 30px;
+  }
+  .career_detail_kanan {
+    margin-bottom: 30px;
+  }
+  /* blog */
+  .blog {
+    padding: 0 40px;
+  }
+  /* blog_detail */
+  .blog_detail {
+    padding: 20px 50px;
+    margin-top: 90px;
+
+  }
+  .blog_detail img {
+    /* height: 250px; */
+  }
+  .blog_detail_img {
+    width: 240px !important;
+    height: 340px !important;
+  }
+
+  .indicators-home {
+    bottom: 25px;
+  }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* new */
+  .banner-hero {
+    width: 100%;
+  }
+  .container_banner_partnership {
+    margin-top: 190px;
+  }
+  .img-partnership {
+    position: absolute;
+  }
+  .img-partnership-content {
+    width: 100%;
+  }
+  .text-banner h1 {
+    font-size: 30px;
+}
+.text-banner h5 {
+  margin-top: 20px;
+}
+  /* end_new */
+  /* header */
+  .nav-item a {
+    font-size: 16px;
+  }
+  .navbar-brand {
+    margin-right: 20px;
+  }
+  .logo-icon {
+    height: 90px;
+    width: 120px;
+  }
+  .border-item {
+    padding-bottom: 22px;
+    width: 120px;
+  }
+  .nav-menu {
+    margin-top: 20px;
+  }
+  .nav-flag {
+    margin-left: 20px;
+  }
+  .nav-logo {
+    margin-right: 10px;
+  }
+  /* item */
+  .item-container .row {
+    margin-top: -50px;
+  }
+  .item {
+    height: 410px;
+    padding: 20px 40px;
+  }
+  .item p {
+    font-size: 12px;
+    height: 168px;
+  }
+  .btn-show-more-detail {
+    margin-top: 0;
+  }
+  .item-container .row {
+    padding: 0 20px;
+    top: -44px;
+  }
+  .btn-show-more-detail {
+    right: 26%;
+    padding: 8px 14px;
+  }
+
+  /* news */
+  .new-section .row {
+    padding: 0;
+  }
+  .latest-news h2 a {
+    padding-right: 20px;
+  }
+  /* form */
+  .form-kontak .row {
+    padding: 60px 60px;
+  }
+  .icon_main {
+    margin-bottom: 60px;
+    height: auto;
+    width: 424px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* footer */
+  .footer .container {
+    padding: 40px 0px;
+  }
+  .container-qr {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .footer-qr-container {
+    padding-top: 20px;
+  }
+  /* company */
+  .container-company span {
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .visi-misi-company {
+    padding: 20px 40px;
+    font-size: 12px;
+  }
+
+  .visi-misi-company p {
+    line-height: 1.8;
+  }
+
+  .visi-misi-company h6 {
+    line-height: 2;
+    font-weight: bold;
+  }
+  .container_product p {
+    padding: 0 60px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .container_img_container img {
+    /* height: 380px; */
+  }
+  /* owl-carousel */
+  .slider {
+    height: 400px;
+  }
+  .owl-carousel-img {
+    flex-direction: column;
+    height: 320px;
+  }
+  .slider-card {
+    background-color: #e1eddc;
+    opacity: 0.3;
+  }
+  .owl-box {
+    font-size: 20px;
+    width: 240px;
+    height: 180px;
+    margin-top: -140px;
+  }
+  .owl-carousel-img img {
+    height: 160px;
+  }
+  .owl-item.active.center .owl-carousel-img img {
+    transition: all 0.3s;
+    transform: scale(1.5);
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+  .owl-item.active.center .owl-box {
+    transition: all 0.3s;
+    font-size: 24px;
+    border-radius: 20px;
+    margin-top: -120px;
+    padding: 10px;
+  }
+  /* partnership */
+  .form-kontak .row {
+    padding: 40px 0;
+  }
+  .img_partnership {
+    height: 430px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  /* career */
+  .container_img_career {
+    padding: 0 20px;
+  }
+  .text-hatihati {
+    font-size: 16px;
+  }
+  .container_text_attention {
+    font-size: 12px;
+  }
+  .container_text_attention {
+    padding: 20px 10px 5px 10px;
+  }
+  .container_career h1 {
+    font-size: 28px;
+  }
+  .career_text {
+    padding-left: 60px;
+    padding-right: 100px;
+  }
+  .career_text span {
+    font-size: 120px;
+    opacity: 0.3;
+  }
+  .petik {
+    top: 0;
+    left: 0;
+  }
+  .und {
+    bottom: 0;
+    right: 20px;
+  }
+  .img_career {
+    width: 100%;
+    object-fit: contain;
+  }
+  .career_desc {
+    padding: 40px 100px;
+  }
+  .career_desc h4 {
+    font-size: 12px;
+    line-height: 2;
+  }
+  .career_filter_container h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .career_filter_container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .container_attention {
+    padding: 60px 40px;
+  }
+  .btn_filter {
+    color: #020e09;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  /* career_detail */
+  .career_detail {
+    padding: 20px 60px;
+  }
+  /* blog */
+  .blog {
+    padding: 0 124px;
+  }
+  /* blog_detail */
+  .blog_detail {
+    padding: 20px 50px;
+  }
+  .blog_detail img {
+    /* height: 250px */
+  }
+  .blog_detail_img {
+    width: 300px !important;
+    height: 500px !important;
+  }
+  .indicators-home {
+    bottom: 20px;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {
+  /* new */
+  .banner-hero {
+    width: 100%;
+  }
+  .container_banner_partnership {
+    margin-top: 170px;
+  }
+  /* end_new */
+  .nav-item a {
+    font-size: 16px;
+  }
+  .navbar-brand {
+    margin-right: 20px;
+  }
+  .logo-icon {
+    height: 90px;
+    width: 120px;
+  }
+  .border-item {
+    padding-bottom: 22px;
+    width: 140px;
+  }
+  .nav-menu {
+    margin-top: 20px;
+  }
+  .nav-flag {
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  /* item */
+  .item-container .row {
+    padding: 0 90px;
+    margin-top: -40px;
+  }
+  .item {
+    height: 410px;
+    padding: 20px 40px;
+    margin: 24px 30px;
+  }
+  .btn-show-more-detail {
+    margin-top: 0;
+  }
+  .btn-show-more-detail {
+    right: 26%;
+    padding: 8px 14px;
+  }
+
+  /* news */
+  .new-section .row {
+    padding: 0 60px;
+  }
+  .latest-news h2 a {
+    padding-right: 30px;
+  }
+  .news-img {
+    height: auto;
+    width: 362px;
+  }
+
+  /* form */
+  .form-kontak .row {
+    padding: 60px 60px;
+  }
+  .icon_main {
+    margin-top: 60px;
+    height: auto;
+    width: 384px;
+  }
+
+  /* footer */
+  .footer .container {
+    padding: 40px 60px;
+  }
+  .footer-qr-container {
+    padding-top: 10px;
+  }
+  .container-qr {
+    padding-top: 0px;
+  }
+  .qr-ig {
+    margin-top: 20px;
+  }
+
+  .container_product p {
+    padding: 0 100px;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  /* career */
+  .container_text_attention {
+    padding: 20px 20px 5px 20px;
+  }
+  .container_img_career {
+    padding: 0 20px;
+  }
+  .container_career h1 {
+    font-size: 38px;
+  }
+  .career_text {
+    padding-left: 100px;
+    padding-right: 160px;
+  }
+  .career_text span {
+    font-size: 200px;
+    opacity: 0.3;
+  }
+  .petik {
+    top: 0;
+    left: 0;
+  }
+  .und {
+    bottom: 0;
+    right: 80px;
+  }
+  .img_career {
+    width: 100%;
+    object-fit: contain;
+  }
+  .career_desc {
+    padding: 40px 200px;
+  }
+  .career_desc h4 {
+    font-size: 12px;
+    line-height: 2;
+  }
+  .career_filter_container h1 {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  .career_filter_container .row {
+    margin: 0;
+    padding: 0;
+  }
+  .container_attention {
+    padding: 60px;
+  }
+  .btn_filter {
+    color: #020e09;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  /* career_detail */
+  .career_detail {
+    padding: 20px 150px;
+    padding-right: 110px;
+  }
+  /* blog_detail */
+  .blog_detail {
+    padding: 20px 180px;
+  }
+  .blog_detail img {
+    /* height: 320px; */
+  }
+  .blog_detail_img {
+    width: 400px !important;
+    height: 600px !important;
+  }
+  .indicators-home {
+    bottom: 25px;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1201px) and (max-width: 1399px) {
+  /* new */
+  .banner-hero {
+    width: 100%;
+  }
+  .banner-hero-container {
+    padding-top: 60px;
+  }
+  /* end_new */
+
+  .item {
+    height: 380px;
+    padding: 10px 14px;
+  }
+  .item p {
+    text-align: start;
+    font-size: 12px;
+    height: 180px;
+  }
+  .btn-show-more-detail {
+    margin-top: 0;
+  }
+  .item-container .row {
+    padding: 0;
+  }
+  .btn-show-more-detail {
+    right: 32%;
+  }
+  /* career */
+  .container_attention {
+    padding: 60px 100px;
+  }
+  /* news */
+  .new-section .row {
+    padding: 0px 60px;
+  }
+  .latest-news h1 {
+    padding-left: 30px;
+  }
+  .latest-news h2 a {
+    padding-right: 50px;
+  }
+  .news-img {
+    height: auto;
+    width: 436px;
+  }
+  .container_product p {
+    padding: 0 140px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  /* form */
+
+  .form-kontak .row {
+    padding: 60px 60px;
+  }
+  /* footer */
+  .footer .container {
+    padding: 40px 60px;
+  }
+  .indicators-home {
+    bottom: 30px;
+  }
+  .container_banner_partnership {
+    margin-top: 198px;
+  }
+}

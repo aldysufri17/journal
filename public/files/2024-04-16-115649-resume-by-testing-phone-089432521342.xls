@@ -1,0 +1,229 @@
+<div class="panel">
+    <div class="col">
+        <div class="form-group">
+                    </div>
+    </div>
+            <div class="flex justify-content-center item-center text-center">
+            <h2 class="h2 fw-bold">PT.GLORI INDAH FARM</h2>
+            <p>LAPORAN LABA RUGI</p>
+            <p>PERIODE 01/Jan/2023 s.d
+                31/Dec/2023</p>
+        </div>
+        <table class="table table-bordered table-striped">
+        <thead>
+            <tr class="table-info">
+                <th>NO</th>
+                <th>Kategori</th>
+                <th>Nominal</th>
+                <th>Total</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="5">PENDAPATAN</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Penjualan</td>
+                <td>Rp.0</td>
+                <th></th>
+                <th>Rp.0</th>
+            </tr>
+            <tr>
+                <th colspan="5">BAHAN BAKU</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Persediaan awal</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Ayam</td>
+                <td>Rp.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pakan</td>
+                <td>Rp.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Total Persediaan Awal</th>
+                <td></td>
+                <th>Rp.0</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Pembeliaan</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Ayam</td>
+                <td>Rp.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pakan</td>
+                <td>Rp.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Total Pembeliaan</th>
+                <td></td>
+                <th>Rp.0</th>
+                <td></td>
+                <th></th>
+            </tr>
+            <tr>
+                <th>Tersedia Dijual</th>
+                <td></td>
+                <td></td>
+                                <th>Rp.0
+                </th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Persediaan Akhir</th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Ayam</td>
+                <td>Rp.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Pakan</td>
+                <td>Rp.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Total Persediaan Akhir</th>
+                <td></td>
+                <td></td>
+                                <th>Rp.0</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>Rp.0</th>
+            </tr>
+            <tr>
+                <th colspan="4">BIAYA TENAGA LANGSUNG</th>
+            </tr>
+                                    <tr>
+                <td colspan="3"></td>
+                <td></td>
+                <th>Rp.0</th>
+            </tr>
+            <tr>
+                <th colspan="5">BIAYA OVERHEAD</th>
+            </tr>
+                                    <tr>
+                <td colspan="3"></td>
+                <td></td>
+                <th>Rp.0</th>
+            </tr>
+            <tr>
+                                <th>HARGA POKOK PENJUALAN</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>Rp.0</th>
+            </tr>
+            <tr>
+                <th>PENGHASILAN KOTOR</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                                <th>Rp.0</th>
+            </tr>
+            <tr>
+                <th colspan="5">BIAYA BIAYA YANG DIPERHITUNGKAN</th>
+            </tr>
+                                    <tr>
+                <td colspan="3"></td>
+                <td></td>
+                <th>Rp.0</th>
+            </tr>
+            <tr>
+                <th colspan="5">PENDAPATAN DILUAR USAHA</th>
+            </tr>
+                                    <tr>
+                <td colspan="3"></td>
+                <td></td>
+                <th>Rp.0</th>
+            </tr>
+            <tr class="table-warning">
+                                <td colspan="2">LABA BERSIH / RUGI SEBELUM PAJAK</td>
+                <th></th>
+                <th></th>
+                <th>Rp.0</th>
+            </tr>
+            <tr class="table-warning">
+                                                <td colspan="2">PAJAK</td>
+                <th></th>
+                <th></th>
+                <th>Rp.0</th>
+            </tr>
+            <tr class="table-warning">
+                <td colspan="2">LABA BERSIH / RUGI SETELAH PAJAK</td>
+                <th></th>
+                <th></th>
+                <th>Rp.0</th>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script>
+    $(".downloadLaporanLaba").on('click', () => {
+        var start_date = $('#start_date').val();
+        var end_date = $('#end_date').val();
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            url: "https://sim.gloriindahfarm.com/reports/profit-data?key=laporanLaba&subkey=download" +
+                "&start_date=" + start_date + "&end_date=" + end_date,
+            method: "GET",
+            beforeSend: function() {
+                $('.downloadLaporanLaba').attr('disabled');
+                $(".spinerloading").show();
+                $("#text").text('Downloading...');
+            },
+            success: function(data) {
+                window.location =
+                    "https://sim.gloriindahfarm.com/reports/profit-data?key=laporanLaba&subkey=download" +
+                    "&start_date=" + start_date + "&end_date=" + end_date
+                $("#text").text('Download');
+                $(".spinerloading").hide();
+            }
+        });
+    })
+</script>
